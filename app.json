@@ -4,7 +4,7 @@
     "slug": "falcon_xchange",
     "version": "2.43.12",
     "orientation": "portrait",
-    "icon": "./assets/icon.jpg",
+    "icon": "./assets/logo.jpg",
     "userInterfaceStyle": "light",
     "plugins": [
       [
@@ -39,7 +39,7 @@
       [
         "expo-notifications",
         {
-          "icon": "./assets/icon.jpg",
+          "icon": "./assets/logo.jpg",
           "color": "#ffffff",
           "mode": "production"
         }
@@ -52,7 +52,7 @@
       "resizeMode": "contain"
     },
     "notification": {
-      "icon": "./assets/icon.jpg",
+      "icon": "./assets/logo.jpg",
       "color": "#ffffff",
       "iosDisplayInForeground": true,
       "androidMode": "default"
@@ -92,7 +92,7 @@
         }
       },
       "adaptiveIcon": {
-        "foregroundImage": "./assets/icon.jpg",
+        "foregroundImage": "./assets/logo.jpg",
         "backgroundColor": "#fff"
       },
       "permissions": [
@@ -114,7 +114,7 @@
       "versionCode": 1
     },
     "web": {
-      "favicon": "./assets/icon.jpg"
+      "favicon": "./assets/logo.jpg"
     },
     "scheme": "falcon_xchange",
     "extra": {
