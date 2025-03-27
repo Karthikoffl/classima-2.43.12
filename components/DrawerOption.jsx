@@ -3,10 +3,7 @@ import { View, Text, StyleSheet, TouchableWithoutFeedback } from "react-native";
 import { useStateValue } from "../StateProvider";
 import { COLORS } from "../variables/color";
 import ChevronRightIcon from "./svgComponents/ChevronRightIcon";
-import SellFasterIcon from "./svgComponents/SellFasterIcon";
-import AboutUsIcon from "./svgComponents/AboutUsIcon";
 import GearIcon from "./svgComponents/GearIcon";
-import FAQIcon from "./svgComponents/FAQIcon";
 import TnCIcon from "./svgComponents/TnCIcon";
 import PPIcon from "./svgComponents/PPIcon";
 import ContactUsIcon from "./svgComponents/ContactUsIcon";
@@ -21,14 +18,8 @@ const DrawerOption = ({ item, isLast, navigation }) => {
   };
 
   const getIcon = () => {
-    if (item?.id === "about") {
-      return <AboutUsIcon fillColor={COLORS.primary} />;
-    } else if (item?.id === "contact") {
+    if (item?.id === "contact") {
       return <ContactUsIcon fillColor={COLORS.primary} />;
-    } else if (item?.id === "faq") {
-      return <FAQIcon fillColor={COLORS.primary} />;
-    } else if (item?.id === "how_to_sell_fast") {
-      return <SellFasterIcon fillColor={COLORS.primary} />;
     } else if (item?.id === "pp") {
       return <PPIcon fillColor={COLORS.primary} />;
     } else if (item?.id === "settings") {

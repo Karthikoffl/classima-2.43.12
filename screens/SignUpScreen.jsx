@@ -330,7 +330,7 @@ const SignUpScreen = ({ navigation, route }) => {
               }}
             >
               <Image
-                source={require("../assets/auth_logo.png")}
+                source={require("../assets/logo_header.png")}
                 style={{
                   width: screenWidth * 0.5,
                   height: screenWidth * 0.25,
@@ -813,7 +813,7 @@ const styles = StyleSheet.create({
     marginBottom: 20,
   },
   tncText: {
-    color: "#ff6600",
+    color: "#2696BE",
   },
   tnCToggle: {
     flexDirection: "row",

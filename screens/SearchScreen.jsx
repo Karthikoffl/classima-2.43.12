@@ -1325,12 +1325,7 @@ const SearchScreen = ({ navigation }) => {
                                 {radiusSearchData.distance}
                               </Text>
                             </View>
-                            <Text style={styles.sliderRightUnit}>
-                              {config.radius_search.units
-                                .charAt(0)
-                                .toUpperCase() +
-                                config.radius_search.units.slice(1)}
-                            </Text>
+                            <Text style={styles.sliderRightUnit}>Km</Text>
                           </View>
                         </View>
                       </View>

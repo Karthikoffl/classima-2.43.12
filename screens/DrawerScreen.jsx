@@ -37,12 +37,13 @@ const DrawerScreen = (props) => {
   const rtlView = rtl_support && {
     flexDirection: "row-reverse",
   };
+
   return (
     <View style={styles.container}>
       <View
         style={{
           alignItems: "center",
-          backgroundColor: COLORS.primary,
+          backgroundColor: COLORS.primary_soft,
           height: wWidth * 0.2,
         }}
       >
@@ -60,7 +61,7 @@ const DrawerScreen = (props) => {
               props.navigation.closeDrawer();
             }}
           >
-            <Feather name="x" size={30} color={COLORS.white} />
+            <Feather name="x" size={30} color={COLORS.primary} />
           </TouchableWithoutFeedback>
         </View>
         <View
@@ -78,32 +79,36 @@ const DrawerScreen = (props) => {
       </View>
       <DrawerContentScrollView {...props}>
         <View style={styles.drawerContentWrap}>
-          {drawerOptions.map((item, index) => {
-            if (item?.id === "share") {
-              if (!miscConfig?.enableAppSharing) {
-                return null;
-              } else {
-                return (
-                  <DrawerShareOption
-                    item={item}
-                    key={`${index}`}
-                    isLast={drawerOptions.length - 1 == index}
-                  />
-                );
+          {drawerOptions
+            .filter(
+              (item) => !["faq", "how_to_sell_fast", "about"].includes(item?.id)
+            )
+            .map((item, index) => {
+              if (item?.id === "share") {
+                if (!miscConfig?.enableAppSharing) {
+                  return null;
+                } else {
+                  return (
+                    <DrawerShareOption
+                      item={item}
+                      key={`${index}`}
+                      isLast={drawerOptions.length - 1 == index}
+                    />
+                  );
+                }
               }
-            }
-            return (
-              <DrawerOption
-                item={item}
-                key={`${index}`}
-                isLast={drawerOptions.length - 1 == index}
-                navigation={props.navigation}
-              />
-            );
-          })}
+              return (
+                <DrawerOption
+                  item={item}
+                  key={`${index}`}
+                  isLast={drawerOptions.length - 1 == index}
+                  navigation={props.navigation}
+                />
+              );
+            })}
         </View>
       </DrawerContentScrollView>
-      <View style={styles.footerSectionWrap}>
+      {/* <View style={styles.footerSectionWrap}>
         <View style={styles.footerContentWrap}>
           <Text style={styles.copyrightText}>
             {__("drawerScreenTexts.copyrightText", appSettings.lng)}{" "}
@@ -112,7 +117,7 @@ const DrawerScreen = (props) => {
             </Text>
           </Text>
         </View>
-      </View>
+      </View> */}
     </View>
   );
 };

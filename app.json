@@ -4,7 +4,7 @@
     "slug": "falcon_xchange",
     "version": "2.43.12",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./assets/icon.jpg",
     "userInterfaceStyle": "light",
     "plugins": [
       [
@@ -39,7 +39,7 @@
       [
         "expo-notifications",
         {
-          "icon": "./assets/icon96x96.png",
+          "icon": "./assets/icon.jpg",
           "color": "#ffffff",
           "mode": "production"
         }
@@ -47,12 +47,12 @@
       "expo-localization"
     ],
     "splash": {
-      "image": "./assets/splash.png",
-      "backgroundColor": "#f85c70",
-      "resizeMode": "cover"
+      "image": "./assets/logo_header.png",
+      "backgroundColor": "#fff",
+      "resizeMode": "contain"
     },
     "notification": {
-      "icon": "./assets/icon96x96.png",
+      "icon": "./assets/icon.jpg",
       "color": "#ffffff",
       "iosDisplayInForeground": true,
       "androidMode": "default"
@@ -92,7 +92,7 @@
         }
       },
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
+        "foregroundImage": "./assets/icon.jpg",
         "backgroundColor": "#fff"
       },
       "permissions": [
@@ -114,8 +114,13 @@
       "versionCode": 1
     },
     "web": {
-      "favicon": "./assets/favicon.png"
+      "favicon": "./assets/icon.jpg"
     },
-    "scheme": "falcon_xchange"
+    "scheme": "falcon_xchange",
+    "extra": {
+      "eas": {
+        "projectId": "ff819013-fe55-4a14-9146-37ce7e2068e6"
+      }
+    }
   }
 }

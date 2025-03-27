@@ -1,4 +1,4 @@
 export const configuration = {
-  appName: "Classima",
+  appName: "Falcon Xchange",
   currentVersion: "2.43.12",
 };

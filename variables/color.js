@@ -1,15 +1,15 @@
 export const COLORS = {
-  primary: "#f85c70",
-  primary_soft: "#ff8f9d",
-  bg_primary: "#ffd1d6",
+  primary: "#2696BE",
+  primary_soft: "#fff",
+  bg_primary: "#fff",
 
   button: {
-    disabled: "#f797a3",
-    active: "#f85c70",
+    disabled: "#2696BE",
+    active: "#2696BE",
     account_delete_bg: "#ff0000",
   },
 
-  bg_splash: "#f85c70",
+  bg_splash: "#2696BE",
 
   badges: {
     _top: "#f39f0a",
@@ -72,7 +72,7 @@ export const COLORS = {
   yellow: "yellow",
   yellow_dark: "#e0cb2d",
   dodgerblue: "dodgerblue",
-  orange: "#ff6600",
+  orange: "#2696BE",
   border_light: "#cfcfcf",
   border_dark: "gray",
 

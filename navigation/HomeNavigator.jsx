@@ -584,8 +584,13 @@ const HomeNavigator = () => {
         }}
       >
         <Image
-          source={require("../assets/splash.png")}
-          style={{ height: "100%", width: "100%", resizeMode: "cover" }}
+          source={require("../assets/logo_header.png")}
+          style={{
+            height: "100%",
+            width: "100%",
+            resizeMode: "contain",
+            backgroundColor: "#2696BE",
+          }}
         />
       </View>
     );

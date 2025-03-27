@@ -50,20 +50,20 @@ const getAppDescription = (selectedLanguage) => {
 };
 
 // FAQ
-const getFAQ = (selectedLanguage) => {
-  return lngs[selectedLanguage]["frequentlyAskedQuestions"];
-};
+// const getFAQ = (selectedLanguage) => {
+//   return lngs[selectedLanguage]["frequentlyAskedQuestions"];
+// };
 
 // Sell Faster
-const getSellFastTips = (selectedLanguage) => {
-  const data = lngs[selectedLanguage]["sellFastTips"];
-  const myData = data.map((_obj) => {
-    const tempObj = { ..._obj };
-    tempObj["uri"] = images[`${_obj.id}`];
-    return tempObj;
-  });
-  return myData;
-};
+// const getSellFastTips = (selectedLanguage) => {
+//   const data = lngs[selectedLanguage]["sellFastTips"];
+//   const myData = data.map((_obj) => {
+//     const tempObj = { ..._obj };
+//     tempObj["uri"] = images[`${_obj.id}`];
+//     return tempObj;
+//   });
+//   return myData;
+// };
 
 // More Options
 const getMoreOptionsData = (selectedLanguage) => {
@@ -97,8 +97,8 @@ export {
   defaultLng,
   getAccountOptionsData,
   getAppDescription,
-  getFAQ,
-  getSellFastTips,
+  // getFAQ,
+  // getSellFastTips,
   getMoreOptionsData,
   getPrivacyPolicy,
   getTnC,

@@ -182,7 +182,7 @@ const ForgotPassScreen = ({ navigation }) => {
             }}
           >
             <Image
-              source={require("../assets/auth_logo.png")}
+              source={require("../assets/logo_header.png")}
               style={{
                 width: screenWidth * 0.5,
                 height: screenWidth * 0.25,

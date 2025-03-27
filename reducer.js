@@ -52,7 +52,7 @@ export const initialState = {
     mark_as_sold: false, // mark_as_sold: boolian
     radius_search: {
       max_distance: 1000,
-      units: "miles",
+      units: "km",
     },
     store_enabled: false,
     store: {
