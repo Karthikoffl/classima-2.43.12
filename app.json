@@ -4,7 +4,7 @@
     "slug": "falcon_xchange",
     "version": "2.43.12",
     "orientation": "portrait",
-    "icon": "./assets/icon.jpg",
+    "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
     "plugins": [
       [
@@ -39,7 +39,7 @@
       [
         "expo-notifications",
         {
-          "icon": "./assets/icon.jpg",
+          "icon": "./assets/icon.png",
           "color": "#ffffff",
           "mode": "production"
         }
