@@ -19,6 +19,9 @@
     "production": {
       "ios": {
         "resourceClass": "default"
+      },
+      "android": {
+        "gradleCommand": ":app:assembleRelease"
       }
     },
     "test": {
