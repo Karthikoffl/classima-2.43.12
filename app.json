@@ -47,7 +47,7 @@
       "expo-localization"
     ],
     "splash": {
-      "image": "./assets/logo.jpg",
+      "image": "./assets/splash.png",
       "backgroundColor": "#fff",
       "resizeMode": "contain"
     },
